@@ -1,12 +1,12 @@
-const breadInfo = {
+const breadOptions = {
     white: 1.00, 
     wheat: 1.00, 
     sourdough: 1.00, 
 };
 
-//bread info function
-const getBreadInfo = () => {
-    return breadInfo;
+//bread options function
+const getBreadOptions = () => {
+    return breadOptions;
 }
 
-export default { getBreadInfo };
+export default { getBreadOptions };
