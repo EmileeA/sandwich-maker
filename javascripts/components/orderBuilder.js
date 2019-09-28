@@ -1,17 +1,19 @@
-import bread.js from './bread.js';
-import cheese.js from './cheese.js';
-import condiments.js from './components.js';
-import veggies.js from './components.js';
-import meat.js from './components.js';
-import utilities from './utilities';
+import breadInfo from './bread.js';
+// import cheese.js from './cheese.js';
+// import condiments.js from './components.js';
+// import veggies.js from './components.js';
+// import meat.js from './components.js';
+// import utilities.js from '..helpers/utilities';
 import orderString from '../helpers/orderString.js'
+
  
-//Making my variables
-const breads = breadInfo.getBreadInfo();
-const order = [];
+
 
 const buildOrder = (e) => {
     e.preventDefault();
+    //Making my variables
+const breads = breadOptions.getBreadOptions();
+const order = [];
     let checkBoxes = Array.from(document.getElementsByClassName('form-check-input'));
     checkBoxes.forEach((box) => {
         if (box.checked) {
@@ -21,8 +23,7 @@ const buildOrder = (e) => {
         }
     });
     console.log(order);
-    const selectedDiv = document.getElementById('orderDiv');
-    selectedDiv.innerHTML = orderString.orderStringBuilder(order);
+    util.printToDom('orderDiv', orderString.orderStringBuilder(order));
 };
 
 export default { buildOrder }; 
