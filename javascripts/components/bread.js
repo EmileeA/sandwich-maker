@@ -1,5 +1,12 @@
-const bread = [
-    {id: "bread1", name:"white", price: 1}, 
-    {id: "bread2", name:"wheat", price: 1},
-    {id: "bread3", name:"sourdough", price: 1},
-];
+const breadInfo = {
+    white: 1.00, 
+    wheat: 1.00, 
+    sourdough: 1.00, 
+};
+
+//bread info function
+const getBreadInfo = () => {
+    return breadInfo;
+}
+
+export default { getBreadInfo };
