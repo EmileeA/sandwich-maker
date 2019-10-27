@@ -15,10 +15,10 @@ An application allowing users to create a custom sandwich. Once generated, infor
 ## Screenshot(s)
 
 Page Load
-![Main View]()
+![Main View](https://raw.githubusercontent.com/EmileeA/sandwich-maker/master/screenshots/Sammich%20-%20On%20Load.png)
 
 Selections totalled via "Create My Order" button
-![Create My Order]()
+![Create My Order](https://raw.githubusercontent.com/EmileeA/sandwich-maker/master/screenshots/Sammich%20-%20Create%20My%20Order.png)
 
 
 
