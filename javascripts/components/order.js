@@ -5,20 +5,18 @@ import veggies from './veggies.js';
 import meat from './meat.js';
 import utilities from '../helpers/utilities.js';
 
+
 const buildOrder = (selectedItems) => {
   let domString = '';
   let finalPrice = 0;
   for (let i = 0; i < selectedItems.length; i++) {
-    domString += `<h2>${selectedItems[i].name} $${selectedItems[i].price}</h2>`
+    domString += `<h1>${selectedItems[i].name} $${selectedItems[i].price}</h1>`
     finalPrice += selectedItems[i].price
   }
-  domString += `<h2>Final Price: $${finalPrice}</h2>`
+  domString += `<h1>Final Price: $${finalPrice}</h1>`
   //utilities is the object. printToDom is the method (we have imported our object "utilities from '../helpers etc.")
   utilities.printToDom('final-order', domString);
- 
-
-
-};
+ };
 
 const buildOrderEvent = () => {
   const selectedBread = bread.getSelectedBreads();

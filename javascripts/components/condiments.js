@@ -1,9 +1,9 @@
 import utilities from "../helpers/utilities.js"
 
 const condimentOptions = [
-    {id: "mayo", name: "Mayo", price: .25}, 
-    {id: "greyPoupon", name: "Grey Poupon", price: .25}, 
-    {id: "hotsauce", name: "Hot Sauce", price: .25} 
+    {id: "mayo", name: "Mayo", price: 0.55 }, 
+    {id: "greyPoupon", name: "Grey Poupon", price: 0.55 }, 
+    {id: "hotsauce", name: "Hot Sauce", price: 0.55 } 
 ];
 
 
@@ -13,18 +13,18 @@ const getSelectedCondiments = () => {
     // you select an empty array because it's creating a bucket (if you will) for them all to go. 
     // console.log(condimentCheckboxes);
     for(let j = 0; j < condimentCheckboxes.length; j++) {
-        //look through to see what's checked
+        // look through to see what's checked
         // console.log(condimentCheckboxes [j].checked);
         for(let k = 0; k < condimentOptions.length; k++) {
             // look through to see what's checked against my cheese array
             if(condimentCheckboxes[j].checked && condimentCheckboxes [j].id === condimentOptions [k].id) {
-                //if it's checked and it matches an id in my cheese array by id
+                // if it's checked and it matches an id in my cheese array by id
                 selectedCondiment.push(condimentOptions[k]);
                 // then push those selected cheese options into the empty array ("bucket") I created above.
             }
         }
     }
-    //return the new array
+    // return the new array
     return selectedCondiment;
 };
 
@@ -39,7 +39,7 @@ const makeOptions = () => {
         </label>
     </div>`;
     }
-    //after domstring is built then we can "call" it -- we can print to the dom. 
+    // after domstring is built then we can "call" it -- we can print to the dom. 
     utilities.printToDom ("condiments", domString)
     };
 export default { makeOptions, getSelectedCondiments };

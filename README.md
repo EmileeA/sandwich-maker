@@ -1,35 +1,34 @@
 # Sandwich Maker
 
-## User Stories
-1.  As a user, when I come to the page, I should see checkboxes with all possible sandwich options
-2.  As a user, when I make my sandwich selections and click enter I should see a list of all the ingredients I have selected and their prices.
-3.  As a user, when I make my sandwich selections and click enter I should see a total cost for my sandwich.
+
+## Description
+
+An application allowing users to create a custom sandwich. Once generated, information displays total of each ingredient chosen as well as overall total for complete order.
+
+## Technologies Used
+
+* HTML5, CSS, and Javascript
+* [Bootstrap](https://getbootstrap.com/): free and open-source CSS framework
+* ES6 Modules
 
 
-## Requirements
+## Screenshot(s)
 
-Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Each of the following should be separate modules:
+Page Load
+![Main View]()
 
-+ bread
-+ meat
-+ cheese
-+ condiments
-+ veggies
-+ sandwich
+Selections totalled via "Generate Sandwich?" button
+![Generate sandwich]()
 
-Your project should have one HTML file that has:
 
-+ A section of options for each sandwich part 
-+ The ability to select multiple, or zero, choices for each section (such as turkey _and_ bacon, or "no meat") 
-+ An empty DOM element into which the final sandwich order and its cost will be inserted  
 
-The ingredient choices should be stored as JS objects that contain the 3 key value pairs: id, name, and price(in cents). 
-```
-{id: "meat1", name: "turkey", price: 90}
-```
+## Instructions for how to run the project
 
-Make sure the ingredient objects cannot be accessed by the other modules except through an accessor (getter) method.  
+* Clone down this project from [Github](https://github.com/gseals/sandwich-maker).
+* Install [http-server](https://www.npmjs.com/package/http-server) from npm.
+* At the root of this project, run the following command: `hs -p 8888`.
+* In your browser, navigate to `https://localhost:8888`;
 
-Each of your modules should be completely self contained.
+## Contributors
 
-> Don't worry about exposing the prices to the user until you display the final cost. This is just an exercise, not a business model.
+* [Emilee Mitchell](https://github.com/emileea)

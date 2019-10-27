@@ -1,9 +1,9 @@
 import utilities from "../helpers/utilities.js";
 
 const veggieOptions = [
-  { id: "lettuce", name: "Lettuce", price: 0.5 },
-  { id: "tomato", name: "Tomato", price: 0.5 },
-  { id: "onion", name: "Onion", price: 0.5 }
+  { id: "lettuce", name: "Lettuce", price: 0.75 },
+  { id: "tomato", name: "Tomato", price: 0.75 },
+  { id: "onion", name: "Onion", price: 0.75 }
 ];
 
 const getSelectedVeggies = () => {

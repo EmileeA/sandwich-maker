@@ -1,9 +1,9 @@
 import utilities from "../helpers/utilities.js";
 
 const breadOptions = [
-  { id: "white", name: "White", price: 1.0 },
-  { id: "wheat", name: "Wheat", price: 1.0 },
-  { id: "sourdough", name: "Sourdough", price: 1.0 }
+  { id: "white", name: "White", price: 1.25 },
+  { id: "wheat", name: "Wheat", price: 1.25 },
+  { id: "sourdough", name: "Sourdough", price: 1.75 }
 ];
 
 //function to return return out one single item

@@ -2,9 +2,9 @@
 import utilities from "../helpers/utilities.js"
 
 const cheeseOptions = [
-    {id: "swiss", name: "Swiss", price: .75}, 
-    {id: "american", name: "American", price: .75}, 
-    {id: "provolone", name: "Provolone", price: .75} 
+    {id: "swiss", name: "Swiss", price: 0.55 }, 
+    {id: "american", name: "American", price: 0.55 }, 
+    {id: "provolone", name: "Provolone", price: 0.55 } 
 ];
 
 

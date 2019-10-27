@@ -1,9 +1,9 @@
 import utilities from "../helpers/utilities.js";
 
 const meatOptions = [
-  { id: "ham", name: "Ham", price: 2.0 },
-  { id: "turkey", name: "Turkey", price: 2.0 },
-  { id: "tofurky", name: "Tofurky", price: 1.0 }
+  { id: "ham", name: "Ham", price: 2.50 },
+  { id: "turkey", name: "Turkey", price: 2.25 },
+  { id: "tofurky", name: "Tofurky", price: 1.75 }
 ];
 
 const getSelectedMeats = () => {
@@ -34,7 +34,7 @@ const makeOptions = () => {
     domString += `<div class="form-check">
         <input class="form-check-input meats" type="checkbox" value="" id="${meatOptions[i].id}">
         <label class="form-check-label" for="${meatOptions[i].name}">
-        ${meatOptions[i].name} $ ${meatOptions[i].price}
+        ${meatOptions[i].name} $ ${(meatOptions[i].price)}
         </label>
     </div>`;
   }
