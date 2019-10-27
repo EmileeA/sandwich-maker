@@ -17,8 +17,8 @@ An application allowing users to create a custom sandwich. Once generated, infor
 Page Load
 ![Main View]()
 
-Selections totalled via "Generate Sandwich?" button
-![Generate sandwich]()
+Selections totalled via "Create My Order" button
+![Create My Order]()
 
 
 
