@@ -1,10 +1,10 @@
 //Prints Breads To Dom
 
-const printToDom = (divID, toPrint) => {
-    const selectedDiv = document.getElementById(divID);
+const printToDom = (divId, toPrint) => {
+    const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = toPrint;
-}
+};
 
-export default {printToDom};
+export default { printToDom };
 
 //Now, export this to let other files know about it :)
